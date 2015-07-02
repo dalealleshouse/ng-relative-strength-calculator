@@ -1,0 +1,31 @@
+{
+  "name": "ng-relative-strength-calculator",
+  "version": "0.0.1",
+  "homepage": "https://github.com/dalealleshouse/ng-relative-strength-calculator",
+  "authors": [
+    "(Dale Alleshouse <dalealleshouse@gmail.com>)"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.0",
+    "jasmine": "*"
+  },
+  "description": "Angular service for consuming the Relative Strength Calculator API : http://rscalc.azurewebsites.net/help",
+  "main": "dist/ng-relative-strength-calculator.js",
+  "keywords": [
+    "Angular",
+    "Relative",
+    "Strength",
+    "Calculator"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
