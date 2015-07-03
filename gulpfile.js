@@ -1,6 +1,6 @@
 ﻿(function() {
     'use strict';
-
+    
     var gulp = require('gulp');
     var gutil = require('gulp-util');
     var wrench = require('wrench');
@@ -9,15 +9,16 @@
         src: 'src',
         dist: 'dist',
         tmp: '.tmp',
-        e2e: 'e2e',
+        allTsBlob: 'src/**/*.ts',
+        codeBlob: ['src/**/*.ts', '!src/**/*.spec.ts'],
+        specBlob: 'src/**/*.spec.ts',
+        outputFile: 'ng-relative-strength-calculator.js',
+        minOutputFile: 'ng-relative-strength-calculator.min.js',
         errorHandler: function (title) {
             return function (err) {
                 gutil.log(gutil.colors.red('[' + title + ']'), err.toString());
                 this.emit('end');
             };
-        },
-        wiredep: {
-            directory: 'bower_components'
         }
     };
 
@@ -27,7 +28,5 @@
         require('./gulp/' + file)(options);
     });
 
-    gulp.task('build', function() {
-
-    });
+    gulp.task('default', ['build']);
 })();

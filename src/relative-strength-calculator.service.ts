@@ -72,5 +72,5 @@
         }
     }
 
-    angular.module(appName).service(RelativeStrengthService.id, RelativeStrengthService);
+    angular.module(moduleName).service(RelativeStrengthService.id, RelativeStrengthService);
 }

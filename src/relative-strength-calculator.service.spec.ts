@@ -6,7 +6,7 @@
         var $httpBackend: ng.IHttpBackendService;
 
         beforeEach(() => {
-            angular.mock.module(appName);
+            angular.mock.module(moduleName);
             var builder = new SutBuilder();
             sut = builder.sut;
             $httpBackend = builder.$httpBackend;
@@ -130,7 +130,9 @@
             });
         });
 
-        function testPromise(expected: { thenRun: boolean; catchRun: boolean; finallyRun: boolean; }, promise: ng.IPromise<any>, flushCount: number) {
+        function testPromise(
+            expected: { thenRun: boolean; catchRun: boolean; finallyRun: boolean; },
+            promise: ng.IPromise<any>, flushCount: number) {
             var runResults = {
                 thenRun: false,
                 catchRun: false,
