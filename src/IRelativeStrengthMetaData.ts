@@ -1,4 +1,5 @@
-﻿module NgRelativeStrengthCalculator {
+﻿/// <reference path="_ref.ts" />
+module NgRelativeStrengthCalculator {
     export interface IRelativeStrengthMetaData {
         formulas: { [path: number]: string; };
         weightUnits: { [path: number]: string; };

@@ -1,6 +1,5 @@
-﻿module NgRelativeStrengthCalculator {
-    'use strict';
-
+﻿/// <reference path="_ref.ts" />
+module NgRelativeStrengthCalculator {
     describe('RelativeStrengthService', () => {
         var sut: IRelativeStrengthService;
         var $httpBackend: ng.IHttpBackendService;

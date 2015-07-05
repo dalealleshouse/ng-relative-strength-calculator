@@ -1,4 +1,5 @@
-﻿module NgRelativeStrengthCalculator {
+﻿/// <reference path="_ref.ts" />
+module NgRelativeStrengthCalculator {
     export interface IRelativeStrengthService {
         baseUrl: string;
         buildRequestUrl: (formula: number|string, weightUnits: number|string) => string;

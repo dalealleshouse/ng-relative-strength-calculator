@@ -15,7 +15,13 @@
     "gulp-typescript": "^2.7.8",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "~3.0.6",
+    "gulp-watch": "^4.2.4",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
     "merge2": "^0.3.6",
+    "phantomjs": "^1.9.17",
     "run-sequence": "^0.3.6",
     "tsd": "~0.6.3",
     "wrench": "~1.5.8"

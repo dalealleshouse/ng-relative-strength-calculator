@@ -1,4 +1,5 @@
-﻿(function() {
+/// <binding BeforeBuild='build' Clean='clean' ProjectOpened='test' />
+(function() {
     'use strict';
     
     var gulp = require('gulp');

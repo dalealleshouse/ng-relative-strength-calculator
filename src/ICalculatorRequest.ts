@@ -1,3 +1,4 @@
+/// <reference path="_ref.ts" />
 module NgRelativeStrengthCalculator {
     export interface ICalculatorRequest {
         id: string;
