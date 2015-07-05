@@ -1,4 +1,4 @@
-/// <binding BeforeBuild='build' Clean='clean' ProjectOpened='test' />
+/// <binding BeforeBuild='build' ProjectOpened='test' />
 (function() {
     'use strict';
     

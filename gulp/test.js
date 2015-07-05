@@ -34,10 +34,10 @@ module.exports = function (options) {
     });
 
     gulp.task('test-build', function() {
-        seq(['clean-test', 'ts-lint'], 'ts-test-compile');
+        seq('ts-lint', 'ts-test-compile');
     });
 
     gulp.task('test', function (cb) {
-        seq('tsd:install', 'test-build', 'test-watch', 'karma', cb);
+        seq('tsd:install', 'clean-test', 'test-build', 'test-watch', 'karma', cb);
     });
 }
